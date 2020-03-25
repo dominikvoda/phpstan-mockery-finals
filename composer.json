@@ -1,0 +1,15 @@
+{
+  "name": "dominikvoda/phpstan-mockery-finals",
+  "autoload": {
+      "psr-4": {"PhpstanMockeryFinals\\":  "src"}
+  },
+  "require-dev": {
+    "brandembassy/coding-standard": "^8.1",
+    "dg/bypass-finals": "^1.1",
+    "phpunit/phpunit": "^8.0",
+    "mockery/mockery": "^1.3"
+  },
+  "scripts": {
+    "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon src -a autoload.php"
+  }
+}
