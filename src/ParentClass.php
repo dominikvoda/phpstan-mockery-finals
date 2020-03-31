@@ -2,6 +2,6 @@
 
 namespace PhpstanMockeryFinals;
 
-final class FinalClass
+class ParentClass
 {
 }

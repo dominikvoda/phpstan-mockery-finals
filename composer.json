@@ -3,13 +3,13 @@
   "autoload": {
       "psr-4": {"PhpstanMockeryFinals\\":  "src"}
   },
+  "require": {
+    "doctrine/collections": "^1.6"
+  },
   "require-dev": {
-    "brandembassy/coding-standard": "^8.1",
-    "dg/bypass-finals": "^1.1",
-    "phpunit/phpunit": "^8.0",
-    "mockery/mockery": "^1.3"
+    "phpstan/phpstan": "^0.12.18"
   },
   "scripts": {
-    "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon src -a autoload.php"
+    "phpstan": "vendor/bin/phpstan analyse -l max src"
   }
 }
