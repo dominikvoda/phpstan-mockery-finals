@@ -2,16 +2,18 @@
 
 namespace PhpstanMockeryFinals\Unresolvable;
 
-use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ORM\Mapping\Column;
+use Doctrine\ORM\Mapping\Entity;
+use Doctrine\ORM\Mapping\Id;
 
 /**
- * @ORM\Entity()
+ * @Entity()
  */
 final class FooEntity
 {
     /**
-     * @ORM\Id
-     * @ORM\Column(type="string")
+     * @Id
+     * @Column(type="string")
      *
      * @var string
      */

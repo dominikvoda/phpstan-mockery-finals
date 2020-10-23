@@ -3,7 +3,8 @@
 namespace PhpstanMockeryFinals\Unresolvable;
 
 use Symfony\Component\Validator\Constraint;
-use Symfony\Component\Validator\Constraints;
+use Symfony\Component\Validator\Constraints\Email;
+use Symfony\Component\Validator\Constraints\Required;
 
 final class FooRuleProvider
 {
@@ -13,8 +14,8 @@ final class FooRuleProvider
     public function getRules(): array
     {
         return [
-            new Constraints\Required(),
-            new Constraints\Email(),
+            new Required(),
+            new Email(),
         ];
     }
 }
