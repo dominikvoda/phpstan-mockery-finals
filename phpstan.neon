@@ -1,5 +1,16 @@
-includes:
-    - vendor/brandembassy/coding-standard/default-phpstan.neon
-
 parameters:
-    tmpDir: temp/phpstan
+    level: max
+
+    bootstrapFiles:
+        - phpstan-bootstrap.php
+
+    paths:
+        - src
+
+    excludes_analyse:
+        - src/Unresolvable/FooEntity.php
+        - src/Unresolvable/FooRuleProvider.php
+
+includes:
+    - vendor/phpstan/phpstan-nette/extension.neon
+    - vendor/phpstan/phpstan-mockery/extension.neon
